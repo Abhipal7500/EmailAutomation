@@ -1,85 +1,88 @@
-Automated Email Sequencer
-The Automated Email Sequencer is a MERN Stack web application designed to help users build and manage automated email sequences using a flowchart-based interface. It utilizes React Flow for visual representation, Agenda for scheduling emails, and Nodemailer for sending them.
+# Automated Email Sequencer
 
-Technologies Utilized
-Frontend
-React
+The **Automated Email Sequencer** is a MERN Stack web application designed to help users build and manage automated email sequences using a flowchart-based interface. It utilizes **React Flow** for visual representation, **Agenda** for scheduling emails, and **Nodemailer** for sending them.
 
-React Flow
+---
 
-Axios
+## Technologies Utilized
 
-React Modal
+### Frontend
+- **React**
+- **React Flow**
+- **Axios**
+- **React Modal**
 
-Backend
-Node.js
+### Backend
+- **Node.js**
+- **Express**
+- **Agenda**
+- **Nodemailer**
+- **MongoDB (via Mongoose)**
 
-Express
+---
 
-Agenda
+## Key Features
 
-Nodemailer
+### Frontend
+- **Visual Flowchart Interface**: A user-friendly interface for designing email sequences.
+- **Different Node Types**:
+  - **Lead-Source**: Specifies the recipient of the email sequence.
+  - **Cold-Email**: Represents an email with subject and message content.
+  - **Wait/Delay**: Introduces a delay between consecutive emails.
+- **Interactive Forms**: Simple modal-based forms for adding and modifying nodes.
+- **Backend Connectivity**: Sends node and edge data to the backend to initiate the email sequence process.
 
-MongoDB (via Mongoose)
+### Backend
+- **Automated Email Scheduling**: Sends emails at predefined intervals based on the flowchart.
+- **Email Delivery System**: Uses Nodemailer to handle email sending efficiently.
 
-Key Features
-Frontend
-Visual Flowchart Interface: A user-friendly interface for designing email sequences.
+---
 
-Different Node Types:
+## Setup Instructions
 
-Lead-Source: Specifies the recipient of the email sequence.
+### Frontend Setup
 
-Cold-Email: Represents an email with subject and message content.
+1. **Configure the .env file**:  
+   Set up the `.env` file as per the provided `.env.sample` file.
 
-Wait/Delay: Introduces a delay between consecutive emails.
+2. **Install necessary dependencies**:
 
-Interactive Forms: Simple modal-based forms for adding and modifying nodes.
+    ```bash
+    cd Emailfrontend-main
+    npm install
+    ```
 
-Backend Connectivity: Sends node and edge data to the backend to initiate the email sequence process.
+3. **Run the frontend server**:
 
-Backend
-Automated Email Scheduling: Sends emails at predefined intervals based on the flowchart.
+    ```bash
+    npm run dev
+    ```
 
-Email Delivery System: Uses Nodemailer to handle email sending efficiently.
+4. **Access the application**:  
+   Open [http://localhost:5173](http://localhost:5173) in your web browser.
 
-Setup Instructions
-Frontend Setup
-Configure the .env file:
-Set up the .env file as per the provided .env.sample file.
+---
 
-Install necessary dependencies:
+### Backend Setup
 
-bash
-Copy
-Edit
-cd Emailfrontend-main
-npm install
-Run the frontend server:
+1. **Configure the .env file**:  
+   Set up the `.env` file as per the provided `.env.sample` file.
 
-bash
-Copy
-Edit
-npm run dev
-Access the application:
-Open http://localhost:5173 in your web browser.
+2. **Install necessary dependencies**:
 
-Backend Setup
-Configure the .env file:
-Set up the .env file as per the provided .env.sample file.
+    ```bash
+    cd EmailBackend-main
+    npm install
+    ```
 
-Install necessary dependencies:
+3. **Run the backend server**:
 
-bash
-Copy
-Edit
-cd EmailBackend-main
-npm install
-Run the backend server:
+    ```bash
+    npm run dev
+    ```
 
-bash
-Copy
-Edit
-npm run dev
-Final Notes
-Once both the frontend and backend are running, the Automated Email Sequencer will be fully functional and ready to use. 🚀
+---
+
+## Final Notes
+
+Once both the frontend and backend are running, the **Automated Email Sequencer** will be fully functional and ready to use. 🚀

@@ -1,8 +1,9 @@
 # Automated Email Sequencer
 
 The **Automated Email Sequencer** is a MERN Stack web application designed to help users build and manage automated email sequences using a flowchart-based interface. It utilizes **React Flow** for visual representation, **Agenda** for scheduling emails, and **Nodemailer** for sending them.
-##Live Link: https://emailfrontend-three.vercel.app/
+
 ---
+##Live Link: https://emailfrontend-three.vercel.app/
 
 ## Technologies Utilized
 
